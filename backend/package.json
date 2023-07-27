@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build": "node_modules/.bin/babel src -d dist",
+    "build": "babel src/backend -d build",
     "postinstall": "npm install -g @babel/cli"
   },
   "keywords": [],
