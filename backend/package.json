@@ -9,8 +9,9 @@
   },
   "scripts": {
     "start": "node index.js",
+    "dev": "nodemon index.js",
     "build": "babel src -d dist",
-    "dev": "nodemon index.js"
+    "postinstall": "npm install -g @babel/cli"
   },
   "keywords": [],
   "author": "",
