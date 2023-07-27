@@ -1,13 +1,14 @@
 import express from "express";
-import { PORT, MONGO_URL } from "./config.js";
+import dotenv from "dotenv";
+dotenv.config();
 import mongoose from "mongoose";
 import taskRoutes from "./routes/taskRoutes.js";
 import emailRoutes from "./routes/emailRoutes.js";
 import cors from "cors";
 
-const app = express();
 const MONGO_URL = process.env.MONGO_URL;
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
+const app = express();
 app.use(cors());
 
 app.use(express.json());
