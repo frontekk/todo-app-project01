@@ -6,7 +6,8 @@ import emailRoutes from "./routes/emailRoutes.js";
 import cors from "cors";
 
 const app = express();
-
+const MONGO_URL = process.env.MONGO_URL;
+const PORT = process.env.PORT || 3000;
 app.use(cors());
 
 app.use(express.json());
