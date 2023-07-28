@@ -4,14 +4,10 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "babel": {
-    "presets": ["@babel/preset-env"]
-  },
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build": "babel /todo-app/backend -d /todo-app/build"
-
+    "build": "babel ./ -d ./build"
   },
   "keywords": [],
   "author": "",
