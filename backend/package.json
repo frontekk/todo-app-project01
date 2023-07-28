@@ -10,7 +10,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build": "babel src/backend -d build"
+    "build": "babel /todo-app/backend -d /todo-app/build"
+
   },
   "keywords": [],
   "author": "",
