@@ -33,7 +33,7 @@ const AddTask = ({ isOpen, onCancel, onConfirm }) => {
     };
     setLoading(true);
     axios
-      .post("http://localhost:3000/task", data)
+      .post("https://todoapp-project01.onrender.com/task", data)
       .then(() => {
         setLoading(false);
         onConfirm();

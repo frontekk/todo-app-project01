@@ -31,7 +31,7 @@ const Modal = ({ isOpen, onCancel, id, onConfirm }) => {
 
   const deleteTask = () => {
     axios
-      .delete(`http://localhost:3000/task/${id}`)
+      .delete(`https://todoapp-project01.onrender.com/task/${id}`)
       .then(() => {
         onConfirm();
         console.log("deleted");

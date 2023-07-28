@@ -38,7 +38,7 @@ const Home = () => {
   const fetchTasks = () => {
     setLoading(true);
     axios
-      .get("http://localhost:3000/task")
+      .get("https://todoapp-project01.onrender.com/task")
       .then((response) => {
         setTasks(response.data.data);
         setLoading(false);

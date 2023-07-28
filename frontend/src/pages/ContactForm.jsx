@@ -14,7 +14,7 @@ const ContactForm = () => {
     e.preventDefault();
     const formData = { email, message };
     axios
-      .post("http://localhost:3000/contact", formData)
+      .post("https://todoapp-project01.onrender.com/contact", formData)
       .then((res) => {
         console.log(res);
         setEmail("");
