@@ -4,7 +4,7 @@
 ###### Contact Page functional, where I created a different endpoint to get all the form result as json object with email and message content.
 
 
-[Demo Live Project](http://https://zesty-salamander-357f47.netlify.app/ "Demo Live Project")
+[Demo Live Project](https://zesty-salamander-357f47.netlify.app/ "Demo Live Project")
 ------------
 
 > Once download start with: npm Install
