@@ -67,12 +67,20 @@ const Home = () => {
 
   // Callback function to handle task title update
   const handleTaskTitleUpdate = (taskId, newTitle) => {
-    // Find the task with the provided ID and update its title
-    setTasks((prevTasks) =>
-      prevTasks.map((task) =>
-        task._id === taskId ? { ...task, title: newTitle } : task
-      )
-    );
+    axios
+      .put(`https://todoapp-project01.onrender.com/task/${taskId}`, {
+        title: newTitle,
+      })
+      .then((response) => {
+        setTasks((prevTasks) =>
+          prevTasks.map((task) =>
+            task._id === taskId ? { ...task, title: newTitle } : task
+          )
+        );
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   return (
